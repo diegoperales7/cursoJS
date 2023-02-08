@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aprendiendo JS</h1>
+    <ul>
+        <li>PRIMAVERA</li>
+        <li>Verano</li>
+        <li>Invierno</li>
+    </ul>
+    <script>
+    //     let hola;
+    //     hola="hola mundo";
+    //     console.log(hola);
+
+    //     const PI=3.1416;
+    //     console.log(PI);
+
+    //     let obj={
+    //         nombre:"Diego",
+    //         edad:26
+            
+    //     }
+    //     obj.sexo="feminino";
+        
+    //     console.log(obj);
+
+    //     let text="Hola que hace";
+    //     let nombre='Diego';
+    //     let apellido='Perales';
+    //     let saludo= new String("g g");
+    //     console.log(text.length,nombre.length,saludo.length);
+
+    //     let sal=text+" "+nombre;
+    //     console.log(sal);
+
+    //     let saludo2=`Hola mi nombre es ${nombre} ${apellido}`;
+
+    //     console.log(saludo2);
+
+    //     let ul=`<ul>
+    //         <li>PRIMAVERA</li>
+    //         <li>Verano</li>
+    //         <li>Invierno</li>
+    //     </ul>`;
+
+    // console.log(ul);
+
+    // let n1=7.521;
+    // let n2="2.33";
+    // console.log(n1.toFixed(2));
+    // console.log(n1+parseFloat(n2));
+
+    // function unaFuncion(){
+    //     console.log("first");
+    //     console.log("second");
+    //     console.log("third");
+    //     return "q paso";
+    // }
+    // //console.log(unaFuncion());
+    // //console.log("***********");
+    // let l=unaFuncion();
+    // console.log(l);
+
+    // //funciones anonimas o expresadas
+    // //fun();
+    // const fun = function (){
+    //     console.log("first");
+    // }
+
+    // fun();
+
+    // // Arrays
+
+    // let a=[];
+    // let b=[1,true,"hola",["a","b","c"]];
+    // console.log(b[3][2]);
+
+
+
+    // //objetos 
+
+    // const perro={
+    //     nombre:'thanos',
+    //     raza:'golden',
+    //     pedigree:false,
+    //     rasgos:["atigrado","Mediano","mancha en el pecho",27],
+    //     dueño:{
+    //         nombre:"diego perales",
+    //         celular:72290029,
+    //         direccion:"Julian Paez"
+    //     },
+    //     saludar:function(){
+    //         console.log("guau guau");
+    //     },
+    //     decirNombre:function(){
+    //         console.log(`hola ${this.nombre} soy de la raza ${this.raza}`);
+    //     }
+    // }
+    
+    // console.log(perro);
+    // console.log(perro["dueño"]);
+    // console.log(perro.raza);
+    // console.log(perro.dueño.nombre);
+    // console.log(perro.rasgos[0]);
+
+    // perro.saludar();
+
+    // perro.decirNombre();
+
+    // console.log(Object.keys(perro));
+    // console.log(Object.values(perro));
+    // console.log(perro.hasOwnProperty("nombre"));
+
+    //Operadores 
+
+    //=== revisa si es igual el tipo de dato y el valor
+
+    //operador ternario
+
+    // let edad=17;
+
+    // let eresMayor=(edad>=18)?"Eres mayor de edad":"Eres menor de edad";
+
+    // console.log(eresMayor);
+
+  //ciclos
+
+    // let diego={
+    //     nombre:"diego",
+    //     edad: 26,
+    //     ci:6559595
+    // }
+
+    // let numeros=[10,20,30,40,50,60,70,80,90];
+
+    // for (const propiedad in diego) {
+    //     console.log(`key: ${propiedad}, Value: ${diego[propiedad]}`);
+
+    // }
+
+    // for (const elemento of numeros) {
+    //     console.log(elemento);
+    // }
+
+    // deteccion de errores
+
+// let val=6;
+
+//     try {
+//         if (isNaN(val)) {
+//             throw new Error("El caracter no es un error");
+//         }
+//         console.log(val*val);
+//     } catch (error) {
+//         console.log(`se produjo el siguiente error: ${error}`);
+//     }
+
+//     const num=[1,2,3,4,5,6,7,8,9,0];
+
+//     for (let i = 0; i < num.length; i++) {
+//         if(i%2==0){
+//             continue;
+//         }
+//         const element = num[i];
+//         console.log(element);
+//     }
+
+//     for (let i = 0; i < num.length; i++) {
+//         if(i%2==0){
+//             continue;
+//         }
+//         const element = num[i];
+//         console.log(element);
+//     }
+
+    //destructuracion 
+
+    // let [one,two,three]=num;
+
+    // console.log(two);
+
+    // let person={
+    //     nombre1:"diego",
+    //     apellido2:"perales",
+    //     edad3:26
+    // }
+
+    // let {nombre1,apellido2}=person;
+
+    // console.log(nombre1, apellido2);
+
+        //objetos literales 
+
+    // let nombre="thanos",
+    //  edad = 7;
+
+    // const dog={
+    //     nombre,
+    //     edad,
+    //     raza:"boxer",
+    //     ladrar(){
+    //         console.log("guau guau");
+    //     }
+    // }
+    // console.log(dog);
+
+    // dog.ladrar();
+
+
+        // Parametros REST 
+
+    // function sumar(a,b,...c) {
+    //     let res=a+b;
+    //     c.forEach(function (n) {
+    //         res+=n;
+    //     });
+
+    //     return res;
+    // }
+
+    //console.log(sumar(2,1,5,10));
+
+    // operador SPREAD o propagacion 
+
+    // const arr1=[1,2,3,4,5],arr2=[6,7,8,9,0];
+
+    // const arr3=[...arr1,...arr2];
+    // console.log(arr3);
+
+    // ARROW FUNCTIONS  *********
+
+    // const saludar=nombre=>console.log(`hola ${nombre}`);
+    
+    // saludar("Irma");
+
+
+    // const sumar=(a,b)=>a+b;
+    // console.log(sumar(5,6));
+
+    // const funcionVariasLineas=()=>{
+    //     console.log("first");
+    //     console.log("two");
+    //     console.log("third");
+    // }
+
+    // funcionVariasLineas();
+
+
+    // const numeros=[1,2,3,4,5];
+
+    // numeros.forEach((elemento,index)=>console.log(`${elemento} esta en la posicion ${index}`));
+
+    //Prototipos ******************
+
+        //funcion constructora
+
+    // function Animal(nombre,genero) {
+    //     this.nombre=nombre;
+    //     this.genero=genero;
+
+    // }
+    
+    // Animal.prototype.sonar=function(){
+    //     console.log("sonidos");
+    // }
+    // Animal.prototype.saludar=function(){
+    //     console.log(`hola me llamo ${this.nombre}`);
+    // }
+
+    // //herencia prototipica 
+    // function Perro(nombre,genero,tamanio) {
+    //     this.super=Animal;
+    //     this.super(nombre,genero);
+    //     this.tamanio=tamanio;
+    // }
+
+    // Perro.prototype=new Animal();
+    // Perro.prototype.constructor=Perro;
+
+    // //sobreescritura de metodos del prototipo padre en el hijo 
+    // Perro.prototype.sonar=function(){
+    //     console.log("soy un perro y mi sonido es un ladrido");
+    // }
+
+    // Perro.prototype.ladrar=function(){
+    //     console.log("guau guau");
+    // }
+
+    // const snoopy=new Perro("Snoopy","macho","mediano");
+    // const lola=new Animal("Lola","hembra");
+    // console.log(snoopy);
+    // console.log(lola);
+
+    // snoopy.sonar();
+    // snoopy.saludar();
+    // snoopy.ladrar();
+
+    //clases y herencia*********
+
+    // class Animal{
+    //     constructor(nombre,genero){
+    //         this.nombre=nombre;
+    //         this.genero=genero;
+    //     }
+    //     sonar(){
+    //         console.log("hago sonidos por q estoy vivo");
+    //     }
+    //     saludar(){
+    //         console.log(`soy un ${this.nombre}`);
+    //     }
+    // }
+
+    // class Perro extends Animal{
+    //     constructor(nombre,genero,tamanio){
+    //         super(nombre,genero);
+    //         this.tamanio=tamanio;
+    //         this.raza=null;
+    //     }
+    //     sonar(){
+    //         console.log("soy un perro y mi sonido es un ladrido");
+    //     }
+    //     ladrar(){
+    //         console.log("guau guau");
+    //     }
+
+    //     static queEres(){
+    //         console.log("los perros son animales mamiferos que perteneen a a familia de los caninos");
+    //     }
+    //     get getRaza(){
+    //         return this.raza;
+    //     }
+    //     set setRaza(raza){
+    //         this.raza=raza;
+    //     }
+    // }
+
+    
+    // Perro.queEres();
+
+    // const mimi = new Animal("Mimi", "Hembra");
+    // const scooby = new Perro("Scooby","Macho","Gigante");
+    // console.log(mimi);
+    // mimi.saludar();
+    // mimi.sonar();
+    // console.log(scooby);
+    // scooby.saludar();
+    // scooby.sonar();
+    // scooby.ladrar();
+
+    // console.log(scooby.getRaza);
+    // scooby.setRaza="Gran danes";
+    // console.log(scooby.getRaza);
+
+    /////Objeto console ************
+    // console.error("hola");
+    // console.warn("pruebita");
+    // console.info("Mostrando informacion ");
+    // let nombre="diego";
+    // let apellido="perales";
+    // let edad="45";
+
+    // console.warn(nombre, apellido,edad);
+    // console.error(`hola soy ${nombre} ${apellido} tengo ${edad}`);
+
+    // console.clear(); 
+
+    // console.groupCollapsed("prueba de colapso");
+    // console.log("first");
+    // console.log("second");
+    // console.log("third");
+    // console.groupEnd();
+
+    // console.table(Object.entries(console).sort());
+
+    // const numeros=[1,2,3,4,5],
+    // vocales=["a","e","i","o","u"];
+
+    // console.table(numeros);
+    // console.table(vocales);
+
+    // const perro={
+    //     nombre:"thanos",
+    //     raza:"boxer",
+    //     color:"atigrado"
+    // }
+
+    // console.table(perro);
+
+    // console.clear();
+
+    // console.time("cuanto tarda el codigo");
+    // const arreglo=Array(1000000);
+
+    // for (let i = 0; i < arreglo.length; i++) {
+    //     arreglo[i]=i;
+        
+    // }
+
+    // console.timeEnd("cuanto tarda el codigo");
+    // console.clear();
+
+    // for (let i = 0; i < 100; i++) {
+    //     console.count("Codigo for");
+    //     console.log(i);
+    // }
+
+    // console.clear();
+
+    // let x=3,
+    // y=2,
+    // pruebaXY="se espera que x siempre sea menor q y";
+
+    // console.assert(x<y,{x,y,pruebaXY});
+
+    //cosole date************
+
+    // console.log(Date());
+
+    // let fecha = new Date();
+
+    // console.log(fecha);
+
+    // console.log(fecha.getDate());
+    //     // dia de la semana l-m-m-j-v-s-d=0-1-2-3-4-5-6
+    // console.log(fecha.getDay());
+    //     //numero de mes comenzando de 0
+    // console.log(fecha.getMonth());
+    //     //año 
+    // console.log(fecha.getFullYear());
+
+    // console.log(fecha.getHours());
+    // console.log(fecha.getMinutes());
+    // console.log(fecha.getSeconds());
+    // console.log(fecha.getMilliseconds());
+
+    // console.log(fecha.toString());
+    // console.log(fecha.toDateString());
+    // console.log(fecha.toLocaleString());
+    // console.log(fecha.toLocaleDateString());
+    // console.log(fecha.toLocaleTimeString());
+
+    // console.log(fecha.getTimezoneOffset());
+
+    // console.log(fecha.getUTCDate());
+    // console.log(fecha.getUTCHours());
+
+    // console.log(Date.now());
+
+    ///// console .math
+
+    // console.log(Math);
+    // console.log(Math.PI);
+    // console.log(Math.abs(-7,8));
+    // console.log(Math.ceil(7.3));
+    // console.log(Math.floor(7.8));
+    // console.log(Math.round(7.4));
+    // console.log(Math.sqrt(81));
+    // console.log(Math.pow(2,5));
+    // console.log(Math.sign(-0.3));
+    // console.log(Math.random());
+    // console.log(Math.round(Math.random()*1000));
+
+    //Operador cortocircuito*******************
+
+    // function saludar(nombre) {
+    //     nombre=nombre||"Desconocido"; // OR muestra por defecto el de la izquierda
+    //     //nombre=nombre&&"Desconocido"; //AND muestra por defecto el de la derecha
+    //     console.log(`Hola ${nombre}`);
+    // }
+
+    // saludar("thanos");
+    // saludar();
+
+    //Alert confirm prompt *******
+
+    // alert("hola esto es una alerta");
+    // confirm("Esto es una confirmacion");
+    // prompt("esto es un prompt permite ingresar un valor");
+    // let alerta=alert("hola esto es una alerta");
+    // let confirmacion=confirm("Esto es una confirmacion");
+    // let aviso=prompt("esto es un prompt permite ingresar un valor");
+
+    // console.log(alerta);
+    // console.log(confirmacion);
+    // console.log(aviso);
+
+    //expresiones regulares**********
+
+    // let cadena="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat do Lorem cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 3 .";
+    // // let expReg=new RegExp("lorem","ig");
+    // // console.log(expReg.test(cadena));
+    // // console.log(expReg.exec(cadena));
+
+    // //let expReg2=/lorem/ig;
+    // //let expReg2=/\d/ig;
+    // //let expReg2=/[0-9]/ig;
+    // let expReg2=/Lorem{1,2}/ig;
+
+    // console.log(expReg2.test(cadena));
+    // console.log(expReg2.exec(cadena));
+
+    //funcion anonima autoejecutable*****************
+
+    // (function () {
+    //     console.log("mi primer IIFE");
+    // })();
+
+    // (function (d,w,c) {
+    //     console.log("mi segunda IIFE");
+    //     console.log(d);
+    //     console.log(w);
+    //     c.log("este es un console abreviado");
+    // })(document,window,console);
+
+        //Imports y exports **************
+
+    
+
+</script>
+</body>
+</html>

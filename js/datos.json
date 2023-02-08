@@ -1,0 +1,10 @@
+
+
+{
+    "cadena":"Diego",
+    "numero":27,
+    "booleano":true,
+    "arreglo":["games","program"],
+    "objeto":{"correo":"diego@gmail.com","cel":72290029},
+    "nulo":null
+}
